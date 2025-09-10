@@ -9,3 +9,7 @@
     text-shadow: 2px 1px 1px var(--shadow);
     box-shadow: 6px 6px 10px var(--shadow);
 }
+
+.border-radius{
+    border-radius: 7px;
+}

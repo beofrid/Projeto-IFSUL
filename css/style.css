@@ -3,8 +3,13 @@
   --amarelo: #F0C705;
   --roxo: #5B05F0;
   --shadow: rgba(0, 0, 0, 0.25);
+  --branco: #fff;
 }
 
+body{
+    margin: 0px;
+    padding: 0px;
+}
 .shadow{ 
     text-shadow: 2px 1px 1px var(--shadow);
     box-shadow: 6px 6px 10px var(--shadow);
@@ -17,24 +22,30 @@
 nav{
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: var(--azul);
 }
 
 nav>h2{
     display: inline;
+    color: var(--branco);
+    font-family: "roboto";
 }
 
 nav button{
     background-color: var(--azul);
-  height: fit-content;
-  align-self: center;
-  border-radius: 7px;
-  color: var(--branco);
+    height: fit-content;
+    align-self: center;
+    border-radius: 7px;
+    color: var(--branco);
+    font-family: "roboto";
 }
 
 .itens-menu{
     /*margin: 20px;*/
+}
+#carrinho{
+    background-color: var(--amarelo);
 }
 
 #carrinho>img{

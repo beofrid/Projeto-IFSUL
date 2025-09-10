@@ -1,3 +1,11 @@
-.apg {
-    text-align: center;
+:root {
+  --azul: #0546F0;
+  --amarelo: #F0C705;
+  --roxo: #5B05F0;
+  --shadow: rgba(0, 0, 0, 0.25);
+}
+
+.shadow{ 
+    text-shadow: 2px 1px 1px var(--shadow);
+    box-shadow: 6px 6px 10px var(--shadow);
 }

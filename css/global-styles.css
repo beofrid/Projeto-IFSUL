@@ -13,3 +13,31 @@
 .border-radius{
     border-radius: 7px;
 }
+
+nav{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--azul);
+}
+
+nav>h2{
+    display: inline;
+}
+
+nav button{
+    background-color: var(--azul);
+  height: fit-content;
+  align-self: center;
+  border-radius: 7px;
+  color: var(--branco);
+}
+
+.itens-menu{
+    /*margin: 20px;*/
+}
+
+#carrinho>img{
+    height: 15px;
+    margin-bottom: -2px;
+}

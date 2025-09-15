@@ -1,35 +1,39 @@
 :root {
   --azul: #0546F0;
+  --azul-sombra: rgba(5, 70, 240, 0.9);
   --amarelo: #F0C705;
   --roxo: #5B05F0;
+  --roxo-sombra: rgba(91, 5, 240, 0.85);
   --shadow: rgba(0, 0, 0, 0.25);
   --branco: #fff;
+  --fonte: Roboto, sans-serif;
 }
 
 body{
     margin: 0px;
     padding: 0px;
 }
-.shadow{ 
-    text-shadow: 2px 1px 1px var(--shadow);
-    box-shadow: 6px 6px 10px var(--shadow);
-}
 
-.border-radius{
-    border-radius: 7px;
+header{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    z-index: 1;
 }
 
 nav{
     text-align: center;
     display: flex;
     justify-content: space-around;
-    background-color: var(--azul);
+    background-color: var(--azul-sombra);
 }
 
 nav>h2{
     display: inline;
     color: var(--branco);
-    font-family: "roboto";
+    font-family: var(--fonte);
+    font-size: 48px;
+    font-weight: bold;
 }
 
 nav button{
@@ -38,17 +42,109 @@ nav button{
     align-self: center;
     border-radius: 7px;
     color: var(--branco);
-    font-family: "roboto";
+    font-family: var(--fonte);
+    font-size: 24px;
+    padding: 3px 10px;
 }
 
-.itens-menu{
-    /*margin: 20px;*/
+nav > *{
+    margin: 17px;
 }
-#carrinho{
+nav > button:last-child{
     background-color: var(--amarelo);
 }
 
-#carrinho>img{
-    height: 15px;
+nav > button:last-child>img{
+    height: 20px;
     margin-bottom: -2px;
+}
+
+#banner{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0%;
+}
+
+#banner > img{
+    width: 100%;
+    position: relative;
+}
+
+#banner > img + img{
+    position: absolute;
+    right: 0;
+    bottom: 8%;
+    width: 60%;
+}
+
+#banner > div{
+    position: absolute;
+    bottom: 4px;
+    display: block;
+    background-color: var(--roxo-sombra);
+    width: 100%;
+}
+
+#banner > div > p{
+    margin: 30px 5%;
+    float: left;
+    font-family: var(--fonte);
+    font-size: 36px;
+    color: var(--branco);
+    text-shadow: 2px 1px 1px var(--shadow);
+}
+
+#banner > div > button{
+    float: right;
+    margin: 30px 10%;
+    padding: 5px 25px;
+    font-family: var(--fonte);
+    font-size: 24px;
+    color: var(--branco);
+    background-color: var(--azul);
+}
+
+#inicial{
+    width: 80%;
+    margin: 80px auto 0px auto;
+}
+
+#inicial > div{
+    width: 13%;
+    float: left;
+    margin: 100px 10%;
+    background-color: var(--azul);
+}
+
+
+#inicial > div > img{
+    width: 70%;
+    margin: 0px 15%;
+}
+
+#inicial > div > div {
+    background-color: var(--branco);
+    height: 15%;
+    display: flow-root;
+}
+
+#inicial > div > div p{
+    float: left;
+    font-family: var(--fonte);
+    font-size: 24px;
+    margin: 10px 15px;
+    text-shadow:none;
+}
+#inicial > div > div > p:first-child{
+    font-size: 16px;
+}
+#inicial > div > div > button{
+    float: right;
+    margin-right: 15px;
+    background-color: var(--amarelo);
+}
+.shadow{ 
+    text-shadow: 2px 1px 1px var(--shadow);
+    box-shadow: 6px 6px 10px var(--shadow);
 }

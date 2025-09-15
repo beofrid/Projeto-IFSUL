@@ -75,7 +75,7 @@ nav > button:last-child>img{
     position: absolute;
     right: 0;
     bottom: 8%;
-    width: 60%;
+    width: 67%;
 }
 
 #banner > div{
@@ -83,11 +83,12 @@ nav > button:last-child>img{
     bottom: 4px;
     display: block;
     background-color: var(--roxo-sombra);
-    width: 100%;
+    width: 80%;
+    padding: 0px 10%;
 }
 
 #banner > div > p{
-    margin: 30px 5%;
+    margin: 30px 0% 30px 10%;
     float: left;
     font-family: var(--fonte);
     font-size: 36px;
@@ -97,7 +98,7 @@ nav > button:last-child>img{
 
 #banner > div > button{
     float: right;
-    margin: 30px 10%;
+    margin: 30px 11% 30px 0%;
     padding: 5px 25px;
     font-family: var(--fonte);
     font-size: 24px;
@@ -110,7 +111,7 @@ nav > button:last-child>img{
     margin: 80px auto 0px auto;
 }
 
-#inicial > div{
+.produto{
     width: 13%;
     float: left;
     margin: 100px 10%;
@@ -118,28 +119,28 @@ nav > button:last-child>img{
 }
 
 
-#inicial > div > img{
+.produto > img{
     width: 70%;
     margin: 0px 15%;
 }
 
-#inicial > div > div {
+.produto > div {
     background-color: var(--branco);
     height: 15%;
     display: flow-root;
 }
 
-#inicial > div > div p{
+.produto > div p{
     float: left;
     font-family: var(--fonte);
     font-size: 24px;
     margin: 10px 15px;
     text-shadow:none;
 }
-#inicial > div > div > p:first-child{
+.produto > div > p:first-child{
     font-size: 16px;
 }
-#inicial > div > div > button{
+.produto > div > button{
     float: right;
     margin-right: 15px;
     background-color: var(--amarelo);

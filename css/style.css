@@ -1,6 +1,7 @@
 :root {
   --azul: #0546F0;
   --azul-sombra: rgba(5, 70, 240, 0.9);
+  --azul-palido: rgba(5, 70, 240, 0.2);
   --amarelo: #F0C705;
   --roxo: #5B05F0;
   --roxo-sombra: rgba(91, 5, 240, 0.85);
@@ -148,4 +149,29 @@ nav > button:last-child>img{
 .shadow{ 
     text-shadow: 2px 1px 1px var(--shadow);
     box-shadow: 6px 6px 10px var(--shadow);
+}
+
+#carrinho{
+    width: 80%;
+    margin: 80px auto 0px auto; 
+}
+
+#carrinho > div{
+    font-family: var(--fonte);
+    font-size: 32px;
+    color: var(--branco);
+    background-color: var(--azul);
+    width: fit-content;
+    padding: 10px 15px;
+    margin: 10px 0px 20px 40px;
+}
+
+#carrinho > div:first-child{
+    font-family: var(--fonte);
+    font-size: 32px;
+    color: var(--branco);
+    background-color: var(--azul);
+    width: fit-content;
+    padding: 10px 15px;
+    margin: 110px 0px 10px 40px;
 }

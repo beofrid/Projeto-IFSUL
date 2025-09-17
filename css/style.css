@@ -260,3 +260,70 @@ nav > button:last-child>img{
     font-size: 24px;
     border-radius: 7px;
 }
+
+#categorias{
+    width: 70%;
+    margin: 10px auto 0px auto;
+    position: absolute;
+    top: 88px;
+    left: 0%;
+    right: 0%;
+}
+#categorias > div:first-child{
+    background-color: var(--azul);
+    margin: 0px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 70% auto;
+}
+#categorias > div:first-child > h2{
+    font-family: var(--fonte);
+    color: var(--branco);
+    font-size: 24px;
+    margin-left: 30px;
+}
+
+#categorias > div:first-child > form{
+    display: grid;
+    grid-template-columns: 90% auto;
+    margin-right: 20px;
+    height: 60%;
+    margin-top: 15px;
+}
+#categorias > div:first-child > form > input{
+    border-radius: 0px;
+    border-style: none;
+    background-color: var(--branco);
+}
+#categorias > div:first-child > form > button{
+    border-radius: 0px;
+    border-style: none;
+    background-color: var(--branco);
+}
+
+#categorias > div:last-child{
+    margin: 0px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+
+#categorias > div:last-child > section:first-child{
+    background-color: var(--azul-palido);
+}
+#categorias > div:last-child > section:first-child > div > label{
+    font-family: var(--fonte);
+    color: var(--branco);
+    font-size: 24px;
+    text-shadow: 2px 1px 1px var(--shadow);
+}
+#categorias > div:last-child > section:first-child > div{
+    margin: 10px 10px 10px 20px;
+}
+
+#categorias > div:last-child > section:last-child{
+    
+}
+
+#categorias > div:last-child > section:last-child > div{
+    width: 33%;
+    float: left;
+}

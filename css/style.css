@@ -1,6 +1,7 @@
 :root {
   --azul: #0546F0;
   --azul-sombra: rgba(5, 70, 240, 0.9);
+  --azul-palido: rgba(5, 70, 240, 0.2);
   --amarelo: #F0C705;
   --roxo: #5B05F0;
   --roxo-sombra: rgba(91, 5, 240, 0.85);
@@ -75,7 +76,7 @@ nav > button:last-child>img{
     position: absolute;
     right: 0;
     bottom: 8%;
-    width: 60%;
+    width: 67%;
 }
 
 #banner > div{
@@ -83,11 +84,12 @@ nav > button:last-child>img{
     bottom: 4px;
     display: block;
     background-color: var(--roxo-sombra);
-    width: 100%;
+    width: 80%;
+    padding: 0px 10%;
 }
 
 #banner > div > p{
-    margin: 30px 5%;
+    margin: 30px 0% 30px 10%;
     float: left;
     font-family: var(--fonte);
     font-size: 36px;
@@ -97,7 +99,7 @@ nav > button:last-child>img{
 
 #banner > div > button{
     float: right;
-    margin: 30px 10%;
+    margin: 30px 11% 30px 0%;
     padding: 5px 25px;
     font-family: var(--fonte);
     font-size: 24px;
@@ -110,7 +112,7 @@ nav > button:last-child>img{
     margin: 80px auto 0px auto;
 }
 
-#inicial > div{
+.produto{
     width: 13%;
     float: left;
     margin: 100px 10%;
@@ -118,28 +120,28 @@ nav > button:last-child>img{
 }
 
 
-#inicial > div > img{
+.produto > img{
     width: 70%;
     margin: 0px 15%;
 }
 
-#inicial > div > div {
+.produto > div {
     background-color: var(--branco);
     height: 15%;
     display: flow-root;
 }
 
-#inicial > div > div p{
+.produto > div p{
     float: left;
     font-family: var(--fonte);
     font-size: 24px;
     margin: 10px 15px;
     text-shadow:none;
 }
-#inicial > div > div > p:first-child{
+.produto > div > p:first-child{
     font-size: 16px;
 }
-#inicial > div > div > button{
+.produto > div > button{
     float: right;
     margin-right: 15px;
     background-color: var(--amarelo);
@@ -147,4 +149,47 @@ nav > button:last-child>img{
 .shadow{ 
     text-shadow: 2px 1px 1px var(--shadow);
     box-shadow: 6px 6px 10px var(--shadow);
+}
+
+#carrinho{
+    width: 70%;
+    margin: 0px auto 0px auto;
+    position: absolute;
+    top: 88px;
+    left: 0%;
+    right: 0%;
+    background-color: var(--azul-palido);
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#carrinho > div > div:first-child{
+    font-family: var(--fonte);
+    font-size: 32px;
+    color: var(--branco);
+    background-color: var(--azul);
+    width: fit-content;
+    padding: 10px 15px;
+    margin: 10px 0px 10px 40px;
+}
+
+.item-carrinho{
+    font-family: var(--fonte);
+    font-size: 32px;
+    background-color: var(--azul);
+    width: fit-content;
+    padding: 10px 15px;
+    margin: 10px 0px 20px 40px;
+    display: grid;
+    grid-template-columns: 30% auto;
+    width: auto;
+}
+
+.item-carrinho > div > p, .item-carrinho > div > h2{
+    color: #000;
+    background-color: var(--branco);
+    margin: 0px 0px 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
 }

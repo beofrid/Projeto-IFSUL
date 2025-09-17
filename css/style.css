@@ -186,7 +186,7 @@ nav > button:last-child>img{
 }
 
 .item-carrinho > div > p, .item-carrinho > div > h2{
-    color: black;
+    color: #000;
     background-color: var(--branco);
     margin: 0px 0px 10px 30px;
     font-size: 18px;

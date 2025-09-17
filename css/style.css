@@ -152,26 +152,44 @@ nav > button:last-child>img{
 }
 
 #carrinho{
-    width: 80%;
-    margin: 80px auto 0px auto; 
+    width: 70%;
+    margin: 0px auto 0px auto;
+    position: absolute;
+    top: 88px;
+    left: 0%;
+    right: 0%;
+    background-color: var(--azul-palido);
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
-#carrinho > div{
+#carrinho > div > div:first-child{
     font-family: var(--fonte);
     font-size: 32px;
     color: var(--branco);
+    background-color: var(--azul);
+    width: fit-content;
+    padding: 10px 15px;
+    margin: 10px 0px 10px 40px;
+}
+
+.item-carrinho{
+    font-family: var(--fonte);
+    font-size: 32px;
     background-color: var(--azul);
     width: fit-content;
     padding: 10px 15px;
     margin: 10px 0px 20px 40px;
+    display: grid;
+    grid-template-columns: 30% auto;
+    width: auto;
 }
 
-#carrinho > div:first-child{
-    font-family: var(--fonte);
-    font-size: 32px;
-    color: var(--branco);
-    background-color: var(--azul);
-    width: fit-content;
-    padding: 10px 15px;
-    margin: 110px 0px 10px 40px;
+.item-carrinho > div > p, .item-carrinho > div > h2{
+    color: black;
+    background-color: var(--branco);
+    margin: 0px 0px 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
 }

@@ -169,14 +169,15 @@ footer > p{
 
 #carrinho{
     width: 70%;
-    margin: 0px auto 0px auto;
-    position: absolute;
+    margin: 0px auto 88px auto;
+    position: relative;
     top: 88px;
     left: 0%;
     right: 0%;
     background-color: var(--azul-palido);
     display: grid;
     grid-template-columns: 50% 50%;
+    padding: 0px 0px 100px 0px;
 }
 
 #carrinho > div:first-child > div:first-child{
@@ -249,14 +250,14 @@ footer > p{
 }
 #devolucao{
     width: 70%;
-    margin: 0px auto 0px auto;
-    position: absolute;
-    top: 88px;
+    margin: 0px auto 38px auto;
+    position: relative;
+    top: 38px;
     left: 0%;
     right: 0%;
     background-color: var(--azul-palido);
     height: auto;
-    padding-bottom: 4.8%;
+    padding: 20px 0px 150px 0px;
 }
 
 #devolucao > h1{
@@ -316,8 +317,8 @@ footer > p{
 
 #categorias{
     width: 70%;
-    margin: 10px auto 0px auto;
-    position: absolute;
+    margin: 10px auto 100px auto;
+    position: relative;
     top: 88px;
     left: 0%;
     right: 0%;
@@ -393,7 +394,7 @@ footer > p{
 #detalhes{
     width: 70%;
     margin: 0px auto 0px auto;
-    position: absolute;
+    position: relative;
     top: 88px;
     left: 0%;
     right: 0%;

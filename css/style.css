@@ -60,6 +60,18 @@ nav > button:last-child>img{
     margin-bottom: -2px;
 }
 
+footer{
+    padding: 10px 0px;
+    margin: auto;
+    width: 100%;
+    background-color: var(--azul);
+}
+footer > p{
+    text-align: center;
+    font-size: 24px;
+    color: var(--branco);
+    font-family: var(--fonte);
+}
 #banner{
     height: 100%;
     width: 100%;
@@ -110,10 +122,14 @@ nav > button:last-child>img{
 #inicial{
     width: 80%;
     margin: 80px auto 0px auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 80%;
+    margin: auto;
 }
 
 .produto{
-    width: 13%;
+    width: auto;
     float: left;
     margin: 100px 10%;
     background-color: var(--azul);
@@ -127,7 +143,7 @@ nav > button:last-child>img{
 
 .produto > div {
     background-color: var(--branco);
-    height: 15%;
+    height: 20%;
     display: flow-root;
 }
 
@@ -135,7 +151,7 @@ nav > button:last-child>img{
     float: left;
     font-family: var(--fonte);
     font-size: 24px;
-    margin: 10px 15px;
+    margin: 10px 70px auto 15px;
     text-shadow:none;
 }
 .produto > div > p:first-child{
@@ -163,7 +179,7 @@ nav > button:last-child>img{
     grid-template-columns: 50% 50%;
 }
 
-#carrinho > div > div:first-child{
+#carrinho > div:first-child > div:first-child{
     font-family: var(--fonte);
     font-size: 32px;
     color: var(--branco);
@@ -193,7 +209,44 @@ nav > button:last-child>img{
     font-weight: bold;
     padding: 10px;
 }
+#resumo-compra > div{
+    font-family: var(--fonte);
+    font-size: 32px;
+    color: var(--branco);
+    background-color: var(--azul);
+    width: auto;
+    padding: 10px 15px;
+    margin: 77px 50px 10px 40px;
+}
 
+#resumo-compra > div > h2{
+    font-weight: normal;
+    background-color: var(--roxo);
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;
+    width: fit-content;
+    margin: 10px auto;
+}
+#resumo-compra > div > div, #resumo-compra > div > select, #resumo-compra > div > input{
+    color: #000;
+    background-color: var(--branco);
+    margin: 20px 0px 20px 0px;
+    font-size: 32px;
+    font-weight: normal;
+    padding: 10px;
+    width: fit-content;
+  }
+#resumo-compra > button{
+    padding: 6% 3%;
+    font-family: var(--fonte);
+    background-color: var(--roxo);
+    color: var(--branco);
+    font-size: 32px;
+    border-radius: 7px;
+    width: 87%;
+    margin: 10% 6%;
+}
 #devolucao{
     width: 70%;
     margin: 0px auto 0px auto;
@@ -335,4 +388,87 @@ nav > button:last-child>img{
 
 #categorias  .produto > div > p:last-child{
     font-size: 18px;
+}
+
+#detalhes{
+    width: 70%;
+    margin: 0px auto 0px auto;
+    position: absolute;
+    top: 88px;
+    left: 0%;
+    right: 0%;
+    background-color: var(--azul-palido);
+    height: auto;
+    padding-bottom: 4.8%;
+}
+
+#detalhes > div > .produto{
+    width: auto;
+    margin: 40px 20px;
+    background-color: var(--azul);
+    box-shadow: 6px 6px 10px var(--shadow);
+}
+#detalhes > div > .produto > img{
+    width: 56%;
+    margin: 0px 22%;
+    padding: 60px 0px;
+}
+#detalhes > div > .produto > div{
+    padding: 10px;
+    height: auto;
+}
+#detalhes > div > .produto > div > p{
+    font-size: 32px;
+}
+
+#detalhes > div > div:last-child{
+    margin: 40px 20px;
+    background-color: var(--azul);
+    box-shadow: 6px 6px 10px var(--shadow);
+}
+
+#detalhes > div > div:last-child > h3{
+    width: fit-content;
+    margin: 50px auto;
+    text-align: center;
+    font-family: var(--fonte);
+    font-size: 32px;
+    color: var(--branco);
+    border-radius: 7px;
+    padding: 10px 80px;
+    background-color: var(--roxo);
+}
+#detalhes > div > div:last-child > p{
+    font-family: var(--fonte);
+    color: var(--branco);
+    font-size: 24px;
+    margin: 0px 142px;
+    text-align: center;
+}
+#detalhes > button:first-child{
+    font-family: var(--fonte);
+    background-color: var(--azul);
+    color: var(--branco);
+    font-size: 24px;
+    border-radius: 7px;
+    margin: 20px 20px;
+    padding: 10px;
+    border-style: none;
+}
+
+#detalhes > div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#detalhes > button:last-child{
+    padding: 40px;
+    font-family: var(--fonte);
+    background-color: var(--roxo);
+    color: var(--branco);
+    font-size: 32px;
+    border-radius: 7px;
+    width: 47%;
+    margin: 10px 0% 20px 51.5%;
+    border-color: var(--amarelo);
 }

@@ -393,14 +393,13 @@ footer > p{
 
 #detalhes{
     width: 70%;
-    margin: 0px auto 0px auto;
+    margin: 0px auto 88px auto;
     position: relative;
     top: 88px;
     left: 0%;
     right: 0%;
     background-color: var(--azul-palido);
     height: auto;
-    padding-bottom: 4.8%;
 }
 
 #detalhes > div > .produto{
